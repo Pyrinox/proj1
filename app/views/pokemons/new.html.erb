@@ -1,0 +1,7 @@
+<h3>Creating A Pokemon</h3>
+
+<%= simple_form_for @pokemon do |p|, :url => create_path %>
+	<%= p.input :name, label: 'Pokemon Name', error: 'Need a name' %>
+	<%= p.button :submit %>
+<% end %>
+
